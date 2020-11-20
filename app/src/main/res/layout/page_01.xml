@@ -30,7 +30,7 @@
         <ImageView
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/tab_address"
+                android:src="@drawable/picture02"
         />
         <TextView
                 android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
         <ImageView
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/tab_find_frd_normal"
+                android:src="@drawable/picture03"
         />
         <TextView
                 android:layout_width="wrap_content"
