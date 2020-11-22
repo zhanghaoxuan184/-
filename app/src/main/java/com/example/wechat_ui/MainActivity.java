@@ -6,16 +6,19 @@ import java.util.List;
 import android.app.Activity;
 
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.viewpager.widget.ViewPager;
 
 public class MainActivity extends Activity implements OnClickListener, ViewPager.OnPageChangeListener {
-
+    public boolean mIsIntercept = false;
     // 底部菜单4个Linearlayout
     private LinearLayout ll_home;
     private LinearLayout ll_address;
@@ -53,6 +56,9 @@ public class MainActivity extends Activity implements OnClickListener, ViewPager
         initEvent();
 
     }
+
+
+
 
     private void initEvent() {
         // 设置按钮监听
@@ -104,6 +110,8 @@ public class MainActivity extends Activity implements OnClickListener, ViewPager
         viewPager.setAdapter(adapter);
 
     }
+
+
 
     @Override
     public void onClick(View v) {
@@ -160,6 +168,7 @@ public class MainActivity extends Activity implements OnClickListener, ViewPager
     public void onPageScrolled(int arg0, float arg1, int arg2) {
 
     }
+
 
     @Override
     public void onPageSelected(int arg0) {
