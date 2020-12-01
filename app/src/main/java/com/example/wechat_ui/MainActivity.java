@@ -2,15 +2,22 @@ package com.example.wechat_ui;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.*;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AdapterView.OnItemSelectedListener;
 
-public class MainActivity extends FragmentActivity implements OnClickListener {
+public class MainActivity extends FragmentActivity implements OnClickListener{
+    //顶部的spinner
+    private Spinner spinnermenu;
+    private String[] menu;
+    private ArrayAdapter<String> menuAdapter;
+
     // 底部菜单4个Linearlayout
     private LinearLayout ll_home;
     private LinearLayout ll_address;
@@ -40,6 +47,22 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        spinnermenu= (Spinner)findViewById(R.id.spinner_menu);
+        menu = new String[]{"添加新用户","取消添加"};
+        menuAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,menu);
+        spinnermenu.setAdapter(menuAdapter);
+
+        spinnermenu.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+            public void onItemSelected(AdapterView<?> parent, View view,int position,long id){
+                Toast.makeText(MainActivity.this,"你选择的是"+spinnermenu.getSelectedItem().toString(),Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
         // 初始化控件
         initView();
         // 初始化底部按钮事件
@@ -196,5 +219,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
         tv_friend.setTextColor(0xffffffff);
         tv_setting.setTextColor(0xffffffff);
     }
+
 
 }

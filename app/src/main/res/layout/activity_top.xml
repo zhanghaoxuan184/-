@@ -12,5 +12,11 @@
             android:text="拾忆"
             android:textSize="20dp"
             android:textColor="#ffffff"/>
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_menu"
+            android:theme="@style/SpinnerStyle"
+    ></Spinner>
 
 </RelativeLayout>
