@@ -17,6 +17,8 @@
             android:layout_height="match_parent"
             android:id="@+id/spinner_menu"
             android:theme="@style/SpinnerStyle"
+            android:popupBackground="#0785F4"
+            android:textColor="#ffffff"
     ></Spinner>
 
 </RelativeLayout>

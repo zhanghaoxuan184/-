@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+        <Button
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_edit_back"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                android:background="@drawable/title_button_back"
+        />
+
+        <Button
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:id="@+id/user_picture_edit"
+                android:background="@drawable/user"
+        />
+    </LinearLayout>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="请输入你想添加的用户姓名"
+            android:id="@+id/user_name"
+            android:inputType="number|numberDecimal"
+            android:maxLength="10"
+    />
+    <EditText
+            android:id="@+id/user_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入你想添加的用户年龄"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:maxLength="25"
+
+    />
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_user_sex"
+    >
+        <RadioButton
+                android:id="@+id/radio_button_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:checked="true"
+                android:layout_gravity="left"
+                android:textColor="#1115e1"
+        />
+        <RadioButton
+                android:id="@+id/radio_button_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textColor="#e2f21515"
+        />
+    </RadioGroup>
+
+</LinearLayout>

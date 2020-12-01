@@ -1,4 +1,5 @@
 package com.example.wechat_ui;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -48,14 +49,20 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         setContentView(R.layout.activity_main);
 
         spinnermenu= (Spinner)findViewById(R.id.spinner_menu);
-        menu = new String[]{"添加新用户","取消添加"};
+        menu = new String[]{"添加","添加新用户","取消添加"};
         menuAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,menu);
         spinnermenu.setAdapter(menuAdapter);
 
+
         spinnermenu.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
             public void onItemSelected(AdapterView<?> parent, View view,int position,long id){
-                Toast.makeText(MainActivity.this,"你选择的是"+spinnermenu.getSelectedItem().toString(),Toast.LENGTH_SHORT).show();
-
+                String selectedmenu = spinnermenu.getSelectedItem().toString();
+                if(selectedmenu==menu[1]) {
+                    Intent intent = new Intent(MainActivity.this,UserinfoAcitvity.class);
+                    startActivity(intent);
+                }
+                else
+                    spinnermenu.setSelection(0,true);
             }
 
             @Override
