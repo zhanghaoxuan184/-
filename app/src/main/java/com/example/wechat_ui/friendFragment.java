@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
@@ -33,6 +34,7 @@ public class friendFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(),MemoryEdit.class);
                 startActivity(intent);
+                Toast.makeText(getActivity(),"添加成功！",Toast.LENGTH_SHORT).show();
             }
         });
 
