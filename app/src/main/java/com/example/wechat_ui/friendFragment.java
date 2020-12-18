@@ -32,9 +32,9 @@ public class friendFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),MemoryEdit.class);
+                Intent intent = new Intent(getActivity(),MemoryRead.class);
                 startActivity(intent);
-                Toast.makeText(getActivity(),"添加成功！",Toast.LENGTH_SHORT).show();
+
             }
         });
 

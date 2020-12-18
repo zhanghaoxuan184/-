@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,10 +29,14 @@ public class MemoryAdapter extends ArrayAdapter<Memory>{
     {
         Memory memory = getItem(position); //滑倒当前位置 获取其实例
         View view = LayoutInflater.from(getContext()).inflate(resourceId,parent,false);
-        ImageView memoryImage = (ImageView)view.findViewById(R.id.memory_image);
-        TextView memoryName = (TextView)view.findViewById(R.id.memory_name);
-        memoryImage.setImageResource(memory.getImageId());
-        memoryName.setText(memory.getName());
+        //      ImageView memoryImage = (ImageView)view.findViewById(R.id.memory_image);
+        TextView textView = (TextView)view.findViewById(R.id.memory_edit_text);
+        //    memoryImage.setImageResource(memory.getImageId());
+        textView.setText(memory.getMemory());
         return view;
+    }
+
+    public void setMemory(String memory,int position){
+        getItem(position).setMemory(memory);
     }
 }

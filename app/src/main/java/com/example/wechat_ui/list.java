@@ -18,7 +18,7 @@ public class list extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list);
+        setContentView(R.layout.page_04);
 
         initFruits();
         FruitAdapter adapter = new FruitAdapter(list.this, R.layout.fruit_item, fruitList);

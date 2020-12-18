@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 public class SettingFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.page_04, container, false);
+        return inflater.inflate(R.layout.list, container, false);
     }
 
 }
