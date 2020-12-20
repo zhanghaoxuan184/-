@@ -29,4 +29,7 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
        fruitName.setText(fruit.getName());
         return view;
    }
+    public void setMemory(String memory,int position){
+        getItem(position).setName(memory);
+    }
 }

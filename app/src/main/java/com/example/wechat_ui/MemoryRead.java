@@ -30,7 +30,6 @@ public class MemoryRead extends AppCompatActivity {
     MemoryAdapter adapter;
     private List<Memory> memoryList = new ArrayList<>();
     private ImageButton imageButton;
-    static Bitmap bitmap = null;
     @SuppressLint("StaticFieldLeak")
     static editDatabaseHelper dbHelper;
 
@@ -104,6 +103,7 @@ public class MemoryRead extends AppCompatActivity {
             }
         });
     }
+
     protected void onActivityResult(int requestCode, int resultCode,Intent data)
     { ///得到返回的活动
         switch (requestCode){

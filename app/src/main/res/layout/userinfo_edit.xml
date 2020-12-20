@@ -44,7 +44,7 @@
                     android:gravity="center">
 
                 <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/user_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="姓名：" />
@@ -57,26 +57,15 @@
                         android:inputType="textPersonName" />
             </TableRow>
 
-            <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center">
 
-                <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="年龄：" />
-
-                <EditText
-                        android:id="@+id/e_age"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="textPersonName" />
-            </TableRow>
 
         </TableLayout>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_view_photo"
+        />
 
         <Button
                 android:id="@+id/button"

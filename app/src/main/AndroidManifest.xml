@@ -20,7 +20,7 @@
         <activity android:name=".MemoryEdit"/>
         <activity android:name=".MemoryRead"/>
         <activity android:name=".UserinfoAcitvity"/>
-
+        <activity android:name=".list"/>
     </application>
 
 </manifest>
