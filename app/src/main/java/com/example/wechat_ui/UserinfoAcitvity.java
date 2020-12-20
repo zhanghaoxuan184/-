@@ -83,7 +83,8 @@ public class UserinfoAcitvity extends AppCompatActivity {
                         }
                     });
                     dialog.show();
-                } else {
+                }
+                else {
                     Intent intent = new Intent();
                   /*  intent.putExtra("memory",message);
                     int imageId = -1;
@@ -154,12 +155,12 @@ public class UserinfoAcitvity extends AppCompatActivity {
         }
     }
     public long insert() {
-        SQLiteDatabase db = MemoryRead.dbHelper.getWritableDatabase();
+        SQLiteDatabase db = list.dbHelper.getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put("memory", user_Edit.getText().toString());
         //  cv.put("imageId",imageViewPhoto.getId());
         cv.put("time", dateToStamp(System.currentTimeMillis()));
-        long result = db.insert("memory_item", null, cv);
+        long result = db.insert("fruit_item", null, cv);
         return result;
     }
 

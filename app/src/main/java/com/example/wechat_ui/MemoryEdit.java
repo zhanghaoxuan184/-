@@ -100,7 +100,8 @@ public class MemoryEdit extends AppCompatActivity {
                         }
                     });
                     dialog.show();
-                }else{
+                }
+                else{
                     Intent intent = new Intent();
                   /*  intent.putExtra("memory",message);
                     int imageId = -1;

@@ -54,18 +54,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ems="10"
-                        android:inputType="textPersonName" />
+                        android:hint="在此编辑..."
+                    />
             </TableRow>
 
 
 
         </TableLayout>
-
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/image_view_photo"
         />
+
 
         <Button
                 android:id="@+id/button"
