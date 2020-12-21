@@ -24,7 +24,6 @@ public class UserinfoAcitvity extends AppCompatActivity {
     public static final int TAKE_PHOTO = 100;
     public static final int CHOOSE_PHOTO = 200;
     private Button buttonback;
-    private Button button;
     private Button button_photo;
     private EditText user_Edit;
     private ImageView imageViewPhoto;
@@ -36,7 +35,6 @@ public class UserinfoAcitvity extends AppCompatActivity {
 
         button_photo = (Button)findViewById(R.id.user_picture_edit);
         buttonback = (Button) findViewById(R.id.user_edit_back);
-        button = (Button) findViewById(R.id.button);
         user_Edit = (EditText) findViewById(R.id.e_name);
         imageViewPhoto = (ImageView)findViewById(R.id.title_image_view_photo);
 
@@ -47,12 +45,7 @@ public class UserinfoAcitvity extends AppCompatActivity {
             user_Edit.setText(memory);
         }
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(UserinfoAcitvity.this, "添加成功！", Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
         button_photo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,14 +79,8 @@ public class UserinfoAcitvity extends AppCompatActivity {
                 }
                 else {
                     Intent intent = new Intent();
-                  /*  intent.putExtra("memory",message);
-                    int imageId = -1;
-                    if( imageViewPhoto.getDrawable()!=null){
-                        imageId = imageViewPhoto.getId();
-                    }*/
 
                     insert();//保存至数据库
-                    //    intent.putExtra("imageID",imageId);
                     intent.putExtra("memory", message);
                     if (position != -1) {
                         intent.putExtra("position", position);
@@ -101,16 +88,6 @@ public class UserinfoAcitvity extends AppCompatActivity {
                     setResult(1, intent); //返回数据给上一个活动
                     finish();
                 }
-              /*  AlertDialog.Builder dialog = new AlertDialog.Builder(MemoryEdit.this);
-                dialog.setTitle("确认放弃")*/
-              /*  new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Message message = new Message();
-                        message.what = UPDATE_VIEW;
-                        handler.sendMessage(message);
-                    }
-                }).start();*/
             }
         });
 
