@@ -15,9 +15,9 @@
 
         <ImageView
                 android:id="@+id/iv_home"
-                android:layout_width="97dp"
-                android:layout_height="107dp"
-                android:src="@drawable/tab_weixin_pressed"/>
+                android:layout_width="103dp"
+                android:layout_height="105dp"
+                android:src="@drawable/home"/>
 
         <TextView
                 android:id="@+id/tv_home"
@@ -39,9 +39,9 @@
 
         <ImageView
                 android:id="@+id/iv_address"
-                android:layout_width="wrap_content"
-                android:layout_height="107dp"
-                android:src="@drawable/tab_address"/>
+                android:layout_width="103dp"
+                android:layout_height="105dp"
+                android:src="@drawable/address"/>
 
         <TextView
                 android:id="@+id/tv_address"
@@ -63,9 +63,9 @@
 
         <ImageView
                 android:id="@+id/iv_friend"
-                android:layout_width="wrap_content"
-                android:layout_height="107dp"
-                android:src="@drawable/tab_find_frd_normal"/>
+                android:layout_width="103dp"
+                android:layout_height="105dp"
+                android:src="@drawable/memory"/>
         <TextView
                 android:id="@+id/tv_friend"
                 android:layout_width="wrap_content"
@@ -86,9 +86,9 @@
 
         <ImageView
                 android:id="@+id/iv_setting"
-                android:layout_width="wrap_content"
-                android:layout_height="110dp"
-                android:src="@drawable/tab_settings_normal"/>
+                android:layout_width="226dp"
+                android:layout_height="106dp"
+                android:src="@drawable/setting"/>
 
         <TextView
                 android:id="@+id/tv_setting"

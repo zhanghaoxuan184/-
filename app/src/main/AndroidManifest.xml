@@ -21,6 +21,7 @@
         <activity android:name=".MemoryRead"/>
         <activity android:name=".UserinfoAcitvity"/>
         <activity android:name=".list"/>
+        <activity android:name=".About"/>
     </application>
 
 </manifest>

@@ -188,22 +188,22 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         // ImageView和TetxView置为绿色，页面随之跳转
         switch (v.getId()) {
             case R.id.ll_home:
-                iv_home.setImageResource(R.drawable.tab_weixin_pressed);
+                iv_home.setImageResource(R.drawable.home);
                 tv_home.setTextColor(0xff1B940A);
                 initFragment(0);
                 break;
             case R.id.ll_address:
-                iv_address.setImageResource(R.drawable.tab_address);
+                iv_address.setImageResource(R.drawable.address);
                 tv_address.setTextColor(0xff1B940A);
                 initFragment(1);
                 break;
             case R.id.ll_friend:
-                iv_friend.setImageResource(R.drawable.tab_find_frd_normal);
+                iv_friend.setImageResource(R.drawable.memory);
                 tv_friend.setTextColor(0xff1B940A);
                 initFragment(2);
                 break;
             case R.id.ll_setting:
-                iv_setting.setImageResource(R.drawable.tab_settings_normal);
+                iv_setting.setImageResource(R.drawable.setting);
                 tv_setting.setTextColor(0xff1B940A);
                 initFragment(3);
                 break;
@@ -216,10 +216,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 
     private void restartBotton() {
         // ImageView置为灰色
-        iv_home.setImageResource(R.drawable.tab_weixin_pressed);
-        iv_address.setImageResource(R.drawable.tab_address);
-        iv_friend.setImageResource(R.drawable.tab_find_frd_normal);
-        iv_setting.setImageResource(R.drawable.tab_settings_normal);
+        iv_home.setImageResource(R.drawable.home);
+        iv_address.setImageResource(R.drawable.address);
+        iv_friend.setImageResource(R.drawable.memory);
+        iv_setting.setImageResource(R.drawable.setting);
         // TextView置为白色
         tv_home.setTextColor(0xffffffff);
         tv_address.setTextColor(0xffffffff);
