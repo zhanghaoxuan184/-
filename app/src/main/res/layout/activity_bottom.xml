@@ -16,7 +16,7 @@
         <ImageView
                 android:id="@+id/iv_home"
                 android:layout_width="103dp"
-                android:layout_height="105dp"
+                android:layout_height="106dp"
                 android:src="@drawable/home"/>
 
         <TextView
@@ -39,8 +39,8 @@
 
         <ImageView
                 android:id="@+id/iv_address"
-                android:layout_width="103dp"
-                android:layout_height="105dp"
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
                 android:src="@drawable/address"/>
 
         <TextView
@@ -64,7 +64,7 @@
         <ImageView
                 android:id="@+id/iv_friend"
                 android:layout_width="103dp"
-                android:layout_height="105dp"
+                android:layout_height="106dp"
                 android:src="@drawable/memory"/>
         <TextView
                 android:id="@+id/tv_friend"
