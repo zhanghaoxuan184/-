@@ -22,6 +22,7 @@
         <activity android:name=".UserinfoAcitvity"/>
         <activity android:name=".list"/>
         <activity android:name=".About"/>
+        <activity android:name=".registration"/>
     </application>
 
 </manifest>
