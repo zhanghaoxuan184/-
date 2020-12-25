@@ -20,6 +20,8 @@
         <activity android:name=".MemoryEdit"/>
         <activity android:name=".MemoryRead"/>
         <activity android:name=".UserinfoAcitvity"/>
+        <activity android:name=".user_memory_READ"/>
+        <activity android:name=".user_memory_EDIT"/>
         <activity android:name=".list"/>
         <activity android:name=".About"/>
         <activity android:name=".registration"/>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/user_memory_edit_layout"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    >
+        <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/user_memory_button_back"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                android:background="@drawable/title_button_back"
+        />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Edit Memory"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="#f68787"
+        />
+        <Button
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:id="@+id/user_memory_button_edit"
+                android:background="@drawable/pen"
+        />
+    </LinearLayout>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="在此编辑..."
+            android:id="@+id/user_memory_edit_text"
+    />
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_memory_image_view"
+    />
+
+</LinearLayout>
