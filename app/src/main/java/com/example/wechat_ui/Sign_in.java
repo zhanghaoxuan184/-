@@ -44,13 +44,15 @@ public class Sign_in extends AppCompatActivity {
                 s4=s1+s2;
                 s3=load();
                 if (s4.equals(s4)){
-                    Toast.makeText(Sign_in.this,s3,Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Sign_in.this,MainActivity.class);
+                    startActivity(intent);
                 }
                 else {
                     Toast.makeText(Sign_in.this, "账号或密码输入错误，请修改之后再登录！", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+        
         registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

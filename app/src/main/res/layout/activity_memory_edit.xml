@@ -35,7 +35,7 @@
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:id="@+id/title_button_edit"
-            android:background="@drawable/editpicture"
+            android:background="@drawable/pen"
             />
     </LinearLayout>
 
