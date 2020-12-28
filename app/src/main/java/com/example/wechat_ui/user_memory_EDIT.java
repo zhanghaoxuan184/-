@@ -216,7 +216,7 @@ public class user_memory_EDIT extends AppCompatActivity {
     {
         SQLiteDatabase db = user_memory_READ.addtbHelper.getWritableDatabase();
         ContentValues cv = new ContentValues();
-        cv.put("memory",memory_Edit.getText().toString());
+        cv.put("memory",memory_Edit.getText().toString()+"\t\t\t\t\t\t\t\t---"+user_memory_READ.tablename);
         //  cv.put("imageId",imageViewPhoto.getId());
         cv.put("time",dateToStamp(System.currentTimeMillis()));
         long result = db.insert("user", null, cv);
